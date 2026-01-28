@@ -149,7 +149,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   }
 
   Widget buildButton(String value) {
-    bool isOperator = "+-x/=c".contains(value);
+    bool isOperator = "+-x/=C".contains(value);
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: CupertinoButton(
