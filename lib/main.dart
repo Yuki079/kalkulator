@@ -96,7 +96,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       } else if (value == "=") {
         try {
           Parser p = Parser();
-          Expression exp = p.parse(expression);
+          Expression exp = p.parse(expression.replaceAll('x', '*'));
           ContextModel cm = ContextModel();
           result = "${exp.evaluate(EvaluationType.REAL, cm)}";
           widget.onCalculate(expression, result);
@@ -133,7 +133,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   }
 
   Widget buildButtonGrid() {
-    final buttons = ["7", "8", "9", "/", "4", "5", "6", "*", "1", "2", "3", "-", "C", "0", "=", "+"];
+    final buttons = ["7", "8", "9", "/", "4", "5", "6", "x", "1", "2", "3", "-", "C", "0", "=", "+"];
     return GridView.builder(
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
@@ -149,7 +149,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   }
 
   Widget buildButton(String value) {
-    bool isOperator = "+-*/=".contains(value);
+    bool isOperator = "+-x/=c".contains(value);
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: CupertinoButton(
