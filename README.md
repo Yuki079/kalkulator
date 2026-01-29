@@ -1,16 +1,43 @@
-# juki_flutterclc
+# 📱 Flutter Calculator App
 
-A new Flutter project.
+Aplikasi **Kalkulator Sederhana** yang dibuat menggunakan **Flutter**.  
+Aplikasi ini mampu melakukan operasi matematika dasar dengan tampilan yang simpel dan mudah digunakan.
 
-## Getting Started
+## ✨ Fitur
+- ➕ Penjumlahan  
+- ➖ Pengurangan  
+- ✖️ Perkalian  
+- ➗ Pembagian  
+- 🔄 Clear / Reset input  
+- 📱 UI sederhana dan responsif  
 
-This project is a starting point for a Flutter application.
+## 🛠️ Teknologi yang Digunakan
+- Flutter
+- Dart
+- Material Design
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Cara Menjalankan Project
+1. Pastikan Flutter sudah terinstall
+   ```bash
+   flutter doctor
+2. Clone repository
+   ```bash
+   git clone https://github.com/Yuki079/kalkulator.git
+4. Masuk ke folder project
+   ```bash
+   cd kalkulator
+6. Jalankan aplikasi
+   ```bash
+   flutter run
+  
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ⚙️ Persyaratan
+Sebelum menjalankan project, pastikan:
+- Flutter SDK sudah terinstall
+- Android Studio / VS Code
+- Emulator atau device fisik
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cek Flutter dengan:
+```bash
+flutter doctor
